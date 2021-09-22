@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="./src/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img loading="lazy" 
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img
+              loading="lazy"
               class="logo-img"
               src="./img/logo.svg"
               alt="logo"
             />
-        </a>
-        <ul class="nav">
+          </a>
+          <ul class="nav">
+            <li>
+              <a href="#menu">Меню</a>
+            </li>
+            <li>
+              <a href="#stocks">Акции</a>
+            </li>
+            <li>
+              <a href="#delivery">Доставка</a>
+            </li>
+            <li>
+              <a href="#reviews">Отзывы</a>
+            </li>
+            <li>
+              <a href="#vacancies">Вакансии</a>
+            </li>
+          </ul>
+          <div class="account-balance"></div>
+        </nav>
+      </div>
+      <div class="header-bottom">
+        <ul class="container">
           <li>
-            <a href="#menu">Меню</a>
+            <a href="#">Роллы</a>
           </li>
           <li>
-            <a href="#stocks">Акции</a>
+            <a href="#">Сеты</a>
           </li>
           <li>
-            <a href="#delivery">Доставка</a>
+            <a href="#">Салаты</a>
           </li>
           <li>
-            <a href="#reviews">Отзывы</a>
+            <a href="#">Паста</a>
           </li>
           <li>
-            <a href="#vacancies">Вакансии</a>
+            <a href="#">Закуски</a>
           </li>
         </ul>
-        <div class="account-balance">
-        </div>
-      </nav>
-      <ul class="header-bottom">
-        <li>
-          <a href="#">Роллы</a>
-        </li>
-        <li>
-          <a href="#">Сеты</a>
-        </li>
-        <li>
-          <a href="#">Салаты</a>
-        </li>
-        <li>
-          <a href="#">Паста</a>
-        </li>
-        <li>
-          <a href="#">Закуски</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+      </div>
+    </header>
 
-
-
-
-
-
-
-
-
-
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

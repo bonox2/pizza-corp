@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/geometria');
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,6 +49,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body{
+  font-family: 'Geometria', sans-serif;
+  font-weight: 500;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,10 +62,17 @@ table {
   margin-top: 60px;
 }
 
-.container{
-  max-width: 1170px;
-  margin:0 auto;
-  width: 100%;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a,
+span {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
 }
 
 img{
@@ -66,12 +80,44 @@ img{
   height: auto;
   width: 100%;
 }
-/* <--------  base css  --------> */
+/* <--------  base start  --------> */
+
+.container{
+  max-width: 1170px;
+  margin:0 auto;
+  width: 100%;
+}
+
+:root{
+  --col-1:  #75787E;
+  --col-2: #E5E5E5;
+  --btn-col-1:#E94F1D;
+  --btn-col-2:#D7301A;
+}
+
+/* <--------  base start  --------> */
 
 
+/* <--------  header start  --------> */
 
 
-
+.header{
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--col-1);
+}
+.nav{
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 
 
@@ -79,10 +125,33 @@ img{
 
 
 .header-bottom{
+  position: sticky;
+  top: 0;
+  border-top:  1px solid var(--col-2) ;
+  border-bottom:  1px solid var(--col-2) ;
+  box-shadow: 0 5px 15px rgba(79, 81, 89, 0.1);
+}
+
+.header-bottom>.container{
   display: flex;
   justify-content: space-between;
-  position: static;
-  top: 80px;
-  left:0;
-  padding-bottom: 123123px;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+
+
+/* <--------  UI kit css  --------> */
+
+.choose-btn{
+  padding: 10px 30px;
+  border-radius: 8px;
+  background: var(--btn-col-1);
+  color: #fff;
+  border:none;
+  transition: .3s;
+  font-size: 16px;
+}
+.choose-btn:hover{
+  background: var(--btn-col-2);
 }
