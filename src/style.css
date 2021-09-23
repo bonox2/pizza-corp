@@ -81,6 +81,9 @@ img{
   height: auto;
   width: 100%;
 }
+p{
+  line-height: 22px;
+}
 /* <--------  base start  --------> */
 
 .container{
@@ -132,17 +135,39 @@ img{
   width: 250px;
   display: flex;
 }
+.account img{
+  width: 20px;
+  height: 20px;
+}
+.account button{
+  border: 1px solid #D6D6D6;
+  border-radius: 10px;
+  background: none;
+}
 .account-room-btn{
-  height: 45px;
-width: 45px;
-border-radius: 10px;
 cursor: pointer;
+padding: 10px;
+margin-right: 15px;
 }
 .account-balance-btn{
-
+  cursor: pointer;
+  padding:10px 15px;
+  display: flex;
+  position: relative;
 }
-
-
+.account-balance{
+  font-size: 16px;
+  color: #4B4B4B;
+  font-weight: 500;
+  margin-left: 10px;
+  display: flex;
+  text-align: center;
+}
+.account-notification{
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
 
 
 
@@ -212,10 +237,16 @@ cursor: pointer;
 
 
 
+
+
+
+
 /* <--------  UI kit css  --------> */
 
 .main{
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* btn ui*/
@@ -253,6 +284,7 @@ cursor: pointer;
   box-shadow: 0 5px 15px rgba(79, 81, 89, 0.5);
   padding: 30px 45px;
   border-radius: 10px;
+  margin: 0;
 }
 .promo-main{
   width: 270px;
@@ -282,4 +314,31 @@ cursor: pointer;
 }
 .corect-btn:hover{
   background: #3CA318;
+}
+
+/*pizza section*/
+
+.pizza-section{
+  width: 270px;
+}
+.pizza-info{
+  margin-bottom: 10px;
+}
+.pizza-title{
+  margin: 10px 0;
+}
+.pizza-components{
+font-size: 14px;
+color:#75787E;
+}
+
+.buy-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.price{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
 }

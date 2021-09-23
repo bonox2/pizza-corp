@@ -6,6 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "swiper": "^7.0.6",
     "vue": "^3.0.4"
   },
   "devDependencies": {
