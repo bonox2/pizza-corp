@@ -111,6 +111,13 @@ img{
   font-size: 14px;
   color: var(--col-1);
 }
+.nav a{
+  transition: .3s;
+}
+.nav a:hover{
+  color: var(--btn-col-1);
+}
+
 .nav{
   width: 360px;
   display: flex;
@@ -131,6 +138,28 @@ img{
   border-bottom:  1px solid var(--col-2) ;
   box-shadow: 0 5px 15px rgba(79, 81, 89, 0.1);
 }
+.header-bottom a {
+  padding-bottom: 0;
+  transition: 0.3s;
+  position: relative;
+  justify-content: center;
+}
+.header-bottom a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: var(--btn-col-1);
+  transition: .3s;
+}
+.header-bottom a:hover{
+  color: var(--btn-col-1);
+}
+.header-bottom a:hover::before {
+  width: 100%;
+}
+
 
 .header-bottom>.container{
   display: flex;
