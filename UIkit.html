@@ -8,7 +8,20 @@
     <title>UI Kit</title>
 </head>
 <body>
-    <button class="choose-btn">Выбрать</button>
-    <div class="wrong-promo"></div>
+        <button class="choose-btn max">Выбрать</button>
+    <form class="promo" type="submit">
+        <a href="#"><img class="promo-cross" src="./src/img/icons/cross.svg" alt="cross"></a>
+        <div class="promo-main">
+            <p class="promo-info ">Введён неверный промокод. Проверьте его написание.</p>
+            <button class="choose-btn min" type="submit">Понятно!</button>
+        </div>
+    </form>
+    <form class="promo" type="submit">
+        <a href="#"><img class="promo-cross" src="./src/img/icons/cross.svg" alt="cross"></a>
+        <div class="promo-main">
+            <p class="promo-info corect">Введён неверный промокод. Проверьте его написание.</p>
+            <button class="choose-btn min corect-btn" type="submit">Отлично!</button>
+        </div>
+    </form>
 </body>
 </html>

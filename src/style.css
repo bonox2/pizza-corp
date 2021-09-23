@@ -141,9 +141,51 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* <--------  UI kit css  --------> */
 
-.choose-btn{
+.main{
+  display: flex;
+}
+
+/* btn ui*/
+.choose-btn, .min{
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: var(--btn-col-1);
+  color: #fff;
+  border:none;
+  transition: .3s;
+  font-size: 14px;
+  width: 105px;
+}
+.choose-btn, .max{
   padding: 10px 30px;
   border-radius: 8px;
   background: var(--btn-col-1);
@@ -151,7 +193,44 @@ img{
   border:none;
   transition: .3s;
   font-size: 16px;
+  width: 130px;
 }
 .choose-btn:hover{
   background: var(--btn-col-2);
+}
+
+/*promo ui*/
+
+.promo{
+  position: relative;
+  width: 360px;
+  box-shadow: 0 5px 15px rgba(79, 81, 89, 0.5);
+  padding: 30px 45px;
+  border-radius: 10px;
+}
+.promo-main{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo-info{
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--btn-col-1);
+  font-size: 18px;
+}
+.promo-cross{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+}
+
+.corect{
+  color: #333;
+}
+.corect-btn{
+  background: #70A32A;
 }
