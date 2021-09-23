@@ -52,6 +52,7 @@ table {
 body{
   font-family: 'Geometria', sans-serif;
   font-weight: 500;
+  padding-bottom: 600px; 
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -127,6 +128,20 @@ img{
 }
 
 
+.account{
+  width: 250px;
+  display: flex;
+}
+.account-room-btn{
+  height: 45px;
+width: 45px;
+border-radius: 10px;
+cursor: pointer;
+}
+.account-balance-btn{
+
+}
+
 
 
 
@@ -139,7 +154,7 @@ img{
   box-shadow: 0 5px 15px rgba(79, 81, 89, 0.1);
 }
 .header-bottom a {
-  padding-bottom: 0;
+  padding-bottom: 25px;
   transition: 0.3s;
   position: relative;
   justify-content: center;
@@ -165,7 +180,7 @@ img{
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 
@@ -213,6 +228,7 @@ img{
   transition: .3s;
   font-size: 14px;
   width: 105px;
+  cursor: pointer;
 }
 .choose-btn, .max{
   padding: 10px 30px;
@@ -223,6 +239,7 @@ img{
   transition: .3s;
   font-size: 16px;
   width: 130px;
+  cursor: pointer;
 }
 .choose-btn:hover{
   background: var(--btn-col-2);
@@ -262,4 +279,7 @@ img{
 }
 .corect-btn{
   background: #70A32A;
+}
+.corect-btn:hover{
+  background: #3CA318;
 }
