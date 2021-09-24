@@ -114,6 +114,7 @@ p{
   align-items: center;
   font-size: 14px;
   color: var(--col-1);
+  padding: 20px 0;
 }
 .nav a{
   transition: .3s;
@@ -139,6 +140,9 @@ p{
   width: 20px;
   height: 20px;
 }
+.account i{
+  font-size: 25px;
+}
 .account button{
   border: 1px solid #D6D6D6;
   border-radius: 10px;
@@ -154,6 +158,7 @@ margin-right: 15px;
   padding:10px 15px;
   display: flex;
   position: relative;
+  color: var(--btn-col-1);
 }
 .account-balance{
   font-size: 16px;
@@ -174,9 +179,8 @@ margin-right: 15px;
   flex-direction: column;
   align-items: center;
 }
-.number img{
-  width: 15px;
-  height: 20px;
+.number i{
+  font-size: 25px;
   margin-right: 15px;
 }
 .number{
@@ -227,10 +231,26 @@ margin-right: 15px;
 
 
 
+/* <--------  header done  --------> */
 
 
 
+/* <--------  promocode start  --------> */
 
+.promocode{
+  width: 390px;
+  padding: 15px;
+  background:#F8F8F8;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+.promocode input{
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #D6D6D6;
+  padding-left: 20px;
+}
 
 
 
