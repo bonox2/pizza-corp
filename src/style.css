@@ -253,12 +253,68 @@ margin-right: 15px;
 }
 
 
+/* <--------  promocode done  --------> */
+
+
+
+/* <--------  menu start  --------> */
+.title{
+  font-size: 24px;
+}
+.pizza-choose{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pizza-section:not(:nth-child(4n+0)){
+  margin: 0 30px 30px 0;
+}
+
+/* <--------  menu done  --------> */
+
+
+/* <--------  delivery start  --------> */
+
+
+
+
+
+/* <--------  delivery done --------> */
+
+.delivery-main{
+  padding: 35px;
+  background: #F8F8F8;
+  border-radius: 10px;
+  margin: 60px 0;
+}
+.delivery-info{
+  color: #4B4B4B;
+  margin-top: 20px;
+  width: 670px;
+}
+
+/* <--------  delivery done --------> */
+
+
+/* <--------  footer start --------> */
+
+.footer{
+  background: #2F3952;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+/* <--------  footer done --------> */
 
 
 
