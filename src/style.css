@@ -1,58 +1,137 @@
-@import url('http://fonts.cdnfonts.com/css/geometria');
-
+@import url("http://fonts.cdnfonts.com/css/geometria");
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-body{
-  font-family: 'Geometria', sans-serif;
+body {
+  font-family: "Geometria", sans-serif;
   font-weight: 500;
-  padding-bottom: 600px; 
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -76,39 +155,37 @@ span {
   color: inherit;
 }
 
-img{
+img {
   display: block;
   height: auto;
   width: 100%;
 }
-p{
+p {
   line-height: 22px;
 }
 /* <--------  base start  --------> */
 
-.container{
+.container {
   max-width: 1170px;
-  margin:0 auto;
+  margin: 0 auto;
   width: 100%;
 }
 
-:root{
-  --col-1:  #75787E;
-  --col-2: #E5E5E5;
-  --btn-col-1:#E94F1D;
-  --btn-col-2:#D7301A;
+:root {
+  --col-1: #75787e;
+  --col-2: #e5e5e5;
+  --btn-col-1: #e94f1d;
+  --btn-col-2: #d7301a;
 }
 
 /* <--------  base start  --------> */
 
-
 /* <--------  header start  --------> */
 
-
-.header{
+.header {
   width: 100%;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,14 +193,14 @@ p{
   color: var(--col-1);
   padding: 20px 0;
 }
-.nav a{
-  transition: .3s;
+.nav a {
+  transition: 0.3s;
 }
-.nav a:hover{
+.nav a:hover {
   color: var(--btn-col-1);
 }
 
-.nav{
+.nav {
   width: 360px;
   display: flex;
   justify-content: space-between;
@@ -131,59 +208,58 @@ p{
   font-weight: 500;
 }
 
-
-.account{
+.account {
   width: 250px;
   display: flex;
 }
-.account img{
+.account img {
   width: 20px;
   height: 20px;
 }
-.account i{
+.account i {
   font-size: 25px;
 }
-.account button{
-  border: 1px solid #D6D6D6;
+.account button {
+  border: 1px solid #d6d6d6;
   border-radius: 10px;
   background: none;
 }
-.account-room-btn{
-cursor: pointer;
-padding: 10px;
-margin-right: 15px;
-}
-.account-balance-btn{
+.account-room-btn {
   cursor: pointer;
-  padding:10px 15px;
+  padding: 10px;
+  margin-right: 15px;
+}
+.account-balance-btn {
+  cursor: pointer;
+  padding: 10px 15px;
   display: flex;
   position: relative;
   color: var(--btn-col-1);
 }
-.account-balance{
+.account-balance {
   font-size: 16px;
-  color: #4B4B4B;
+  color: #4b4b4b;
   font-weight: 500;
   margin-left: 10px;
   display: flex;
   text-align: center;
 }
-.account-notification{
+.account-notification {
   position: absolute;
   top: -12px;
   right: -12px;
 }
 
-.contact-number{
+.contact-number {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.number i{
+.number i {
   font-size: 25px;
   margin-right: 15px;
 }
-.number{
+.number {
   color: #000;
   font-size: 20px;
   font-weight: 500;
@@ -191,12 +267,11 @@ margin-right: 15px;
   margin-bottom: 5px;
 }
 
-
-.header-bottom{
+.header-bottom {
   position: sticky;
   top: 0;
-  border-top:  1px solid var(--col-2) ;
-  border-bottom:  1px solid var(--col-2) ;
+  border-top: 1px solid var(--col-2);
+  border-bottom: 1px solid var(--col-2);
   box-shadow: 0 5px 15px rgba(79, 81, 89, 0.1);
 }
 .header-bottom a {
@@ -212,166 +287,173 @@ margin-right: 15px;
   width: 0;
   height: 3px;
   background: var(--btn-col-1);
-  transition: .3s;
+  transition: 0.3s;
 }
-.header-bottom a:hover{
+.header-bottom a:hover {
   color: var(--btn-col-1);
 }
 .header-bottom a:hover::before {
   width: 100%;
 }
 
-
-.header-bottom>.container{
+.header-bottom > .container {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
   padding-top: 20px;
 }
 
-
-
 /* <--------  header done  --------> */
-
-
 
 /* <--------  promocode start  --------> */
 
-.promocode{
+.promocode {
   width: 390px;
   padding: 15px;
-  background:#F8F8F8;
+  background: #f8f8f8;
   border-radius: 10px;
   margin: 40px auto;
 }
-.promocode input{
+.promocode input {
   width: 100%;
   height: 40px;
   border-radius: 6px;
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
   padding-left: 20px;
 }
 
-
 /* <--------  promocode done  --------> */
 
-
-
 /* <--------  menu start  --------> */
-.title{
+.title {
   font-size: 24px;
 }
-.pizza-choose{
+.pizza-choose {
   display: flex;
   flex-wrap: wrap;
 }
-.pizza-section:not(:nth-child(4n+0)){
+.pizza-section:not(:nth-child(4n + 0)) {
   margin: 0 30px 30px 0;
 }
 
 /* <--------  menu done  --------> */
 
-
 /* <--------  delivery start  --------> */
-
-
-
-
 
 /* <--------  delivery done --------> */
 
-.delivery-main{
+.delivery-main {
   padding: 35px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   border-radius: 10px;
   margin: 60px 0;
 }
-.delivery-info{
-  color: #4B4B4B;
+.delivery-info {
+  color: #4b4b4b;
   margin-top: 20px;
   width: 670px;
 }
 
 /* <--------  delivery done --------> */
 
-
 /* <--------  footer start --------> */
 
-.footer{
-  background: #2F3952;
+.footer {
+  background: #2f3952;
+  color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 40px 0;
+  border-bottom: 1px solid #75787e;
+}
+.footer-sections-menu {
+  display: flex;
+}
+.footer-sections-menu li {
+  margin-right: 40px;
+}
+.socials {
+  display: flex;
+}
+.socials a {
+  padding: 10px;
+  background: #75787e;
+  border-radius: 999px;
+  margin-right: 25px;
+  transition: 0.3s;
+}
+.socials a:hover {
+  background: var(--btn-col-2);
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.footer-txt {
+  width: 670px;
+}
+.footer-txt p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer-txt p:not(:last-child){
+  margin-bottom: 15px;
+}
+.footer-cards {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer-cards div{
+  margin-bottom: 10px;
+}
 
 /* <--------  footer done --------> */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* <--------  UI kit css  --------> */
 
-.main{
+.main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 /* btn ui*/
-.choose-btn, .min{
+.choose-btn,
+.min {
   padding: 10px 20px;
   border-radius: 8px;
   background: var(--btn-col-1);
   color: #fff;
-  border:none;
-  transition: .3s;
+  border: none;
+  transition: 0.3s;
   font-size: 14px;
   width: 105px;
   cursor: pointer;
 }
-.choose-btn, .max{
+.choose-btn,
+.max {
   padding: 10px 30px;
   border-radius: 8px;
   background: var(--btn-col-1);
   color: #fff;
-  border:none;
-  transition: .3s;
+  border: none;
+  transition: 0.3s;
   font-size: 16px;
   width: 130px;
   cursor: pointer;
 }
-.choose-btn:hover{
+.choose-btn:hover {
   background: var(--btn-col-2);
 }
 
 /*promo ui*/
 
-.promo{
+.promo {
   position: relative;
   width: 360px;
   box-shadow: 0 5px 15px rgba(79, 81, 89, 0.5);
@@ -379,19 +461,19 @@ margin-right: 15px;
   border-radius: 10px;
   margin: 0;
 }
-.promo-main{
+.promo-main {
   width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.promo-info{
+.promo-info {
   text-align: center;
   padding-bottom: 25px;
   color: var(--btn-col-1);
   font-size: 18px;
 }
-.promo-cross{
+.promo-cross {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -399,55 +481,54 @@ margin-right: 15px;
   height: 10px;
 }
 
-.corect{
+.corect {
   color: #333;
 }
-.corect-btn{
-  background: #70A32A;
+.corect-btn {
+  background: #70a32a;
 }
-.corect-btn:hover{
-  background: #3CA318;
+.corect-btn:hover {
+  background: #3ca318;
 }
 
 /*pizza section*/
 
-.pizza-section{
+.pizza-section {
   width: 270px;
 }
-.pizza-info{
+.pizza-info {
   margin-bottom: 10px;
 }
-.pizza-title{
+.pizza-title {
   margin: 10px 0;
 }
-.pizza-components{
-font-size: 14px;
-color:#75787E;
+.pizza-components {
+  font-size: 14px;
+  color: #75787e;
 }
 
-.buy-info{
+.buy-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.price{
-font-size: 24px;
-font-weight: 500;
-line-height: 32px;
+.price {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
-
-.buy-btns{
+.buy-btns {
   display: flex;
   font-size: 14px;
 }
-.duble-left{
+.duble-left {
   width: auto;
-  padding: 10px ;
-  border-radius: 10px 0 0 10px ;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
 }
-.duble-right{
+.duble-right {
   padding: 10px 15px;
-  border-radius: 0 10px 10px 0 ;
+  border-radius: 0 10px 10px 0;
   width: auto;
 }
