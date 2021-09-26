@@ -40,7 +40,54 @@
             </div>
         </div>
     </div>
-
+    <div class="order-choose-section">
+        <img loading="lazy" src="./src/img/image/order-pizza.jpg" alt="pizza" width="1" height="1">
+        <img class="new-pizza" loading="lazy" src="./src/img/image/new.svg" alt="pizza" width="1" height="1">
+        <div class="order-info">
+            <h3>Пепперони</h3>
+            <button class="order-btn">275 ₽</button>
+        </div>
+    </div>
+    <style>
+        .order-choose-section{
+            padding: 10px 30px 10px 20px;
+            width: 220px;
+            display: flex;
+            border: 1px solid #E5E5E5;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px 0 #787D8B26;
+            position: relative;
+        }
+        .order-choose-section img :first{
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+        .new-pizza{
+            width: 35px;
+            height: 20px;
+            position: absolute;
+            left:20px;
+            top: 20px;
+        }
+        .order-info{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .order-info h3{
+            margin-top: 10px;
+        }
+        .order-btn{
+            margin-bottom: 10px;
+            width: 80px;
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: none;
+            background: rgba(231, 53, 29, 0.1);
+            color: #E94F1D;
+        }
+    </style>
 
 
         </div>
