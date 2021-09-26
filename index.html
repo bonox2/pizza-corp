@@ -11,6 +11,10 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza</title>
   </head>
@@ -68,27 +72,73 @@
           </div>
         </nav>
       </div>
-
-      <div class="header-bottom">
-        <ul class="container">
-          <li>
-            <a href="#">Роллы</a>
-          </li>
-          <li>
-            <a href="#">Сеты</a>
-          </li>
-          <li>
-            <a href="#">Салаты</a>
-          </li>
-          <li>
-            <a href="#">Паста</a>
-          </li>
-          <li>
-            <a href="#">Закуски</a>
-          </li>
-        </ul>
-      </div>
     </header>
+    <div class="header-bottom">
+      <ul class="container">
+        <li>
+          <a href="#">Роллы</a>
+        </li>
+        <li>
+          <a href="#">Сеты</a>
+        </li>
+        <li>
+          <a href="#">Салаты</a>
+        </li>
+        <li>
+          <a href="#">Паста</a>
+        </li>
+        <li>
+          <a href="#">Закуски</a>
+        </li>
+      </ul>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <div class="swiper hero-top-slider">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide">
+            <img lodaing="lazy" src="./src/img/image/hero-slide1.jpg" alt="slide" width="1" height="1">
+          </div>
+          <div class="swiper-slide">
+            <img lodaing="lazy" src="./src/img/image/hero-slide1.jpg" alt="slide" width="1" height="1">
+          </div>
+          <div class="swiper-slide">
+            <img lodaing="lazy" src="./src/img/image/hero-slide1.jpg" alt="slide" width="1" height="1">
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="hot-orders">
+      <div class="container">
+        <div class="swiper orders-slider">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide">
+
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
       <form type="submit" class="promocode">
         <input type="text" placeholder="Введите промокод" />
@@ -288,6 +338,27 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const hero_top_slider = new Swiper(".hero-top-slider", {
+        slidesPerView: 1,
+        loop: true,
+        effect: "default",
+        centeredSlides: true,
+        autoplay:true,
+      });
+    </script>
+    <script>
+      const orders_slider = new Swiper(".orders-slider", {
+        navigation:{
+          nextEl: ".order-slider-next",
+          prevEl: ".order-slider-prev",
+        },
+        slidesPerView: 5,
+        loop: true,
+        effect: "navigation",
+        centeredSlides: true,
+      });
+    </script>
   </body>
 </html>
