@@ -13,6 +13,10 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -81,10 +85,12 @@
             height="0"
           />
           <div class="pizza-settings-details">
-            <h1>Пицца Итальянская 
-              с моцареллой и пепперони</h1>
+            <h1>Пицца Итальянская с моцареллой и пепперони</h1>
             <span class="size-info">30 см, Традиционное тесто, 710 г</span>
-            <p class="topics">Гренки ржаные, картофель фри, наггетсы, картофельные дольки, хот чиз, соус барбекю, соус сырный</p>
+            <p class="topics">
+              Гренки ржаные, картофель фри, наггетсы, картофельные дольки, хот
+              чиз, соус барбекю, соус сырный
+            </p>
           </div>
           <div class="buy-info-sec">
             <div class="price">799 ₽</div>
@@ -96,20 +102,84 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <section class="topics-section">
+      <div class="container">
+        <div class="swiper topics">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="topic-slide">
+                <img
+                  loading="lazy"
+                  src="./src/img/image/pickles.jpg"
+                  alt="pickles"
+                  width="1"
+                  height="1"
+                />
+                <h3>Огурцы маринованиые</h3>
+                <div class="price">59 ₽</div>
+                <div class="choose-btn min">Выбрать</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="topic-slide">
+                <img
+                  loading="lazy"
+                  src="./src/img/image/pickles.jpg"
+                  alt="pickles"
+                  width="1"
+                  height="1"
+                />
+                <h3>Огурцы маринованиые</h3>
+                <div class="price">59 ₽</div>
+                <div class="choose-btn min">Выбрать</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="topic-slide">
+                <img
+                  loading="lazy"
+                  src="./src/img/image/pickles.jpg"
+                  alt="pickles"
+                  width="1"
+                  height="1"
+                />
+                <h3>Огурцы маринованиые</h3>
+                <div class="price">59 ₽</div>
+                <div class="choose-btn min">Выбрать</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="topic-slide">
+                <img
+                  loading="lazy"
+                  src="./src/img/image/pickles.jpg"
+                  alt="pickles"
+                  width="1"
+                  height="1"
+                />
+                <h3>Огурцы маринованиые</h3>
+                <div class="price">59 ₽</div>
+                <div class="choose-btn min">Выбрать</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="topic-slide">
+                <img
+                  loading="lazy"
+                  src="./src/img/image/pickles.jpg"
+                  alt="pickles"
+                  width="1"
+                  height="1"
+                />
+                <h3>Огурцы маринованиые</h3>
+                <div class="price">59 ₽</div>
+                <div class="choose-btn min">Выбрать</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -180,5 +250,15 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const topics_slider = new Swiper(".topics", {
+        slidesPerView: 1,
+        loop: true,
+        effect: "default",
+        centeredSlides: true,
+        autoplay: true,
+      });
+    </script>
   </body>
 </html>
