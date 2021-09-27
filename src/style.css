@@ -178,7 +178,14 @@ p {
   --btn-col-2: #d7301a;
 }
 
-/* <--------  base start  --------> */
+h2{
+font-size: 24px;
+font-weight: 500;
+}
+button{
+  cursor: pointer;
+}
+/* <--------  base end  --------> */
 
 /* <--------  header start  --------> */
 
@@ -307,7 +314,7 @@ p {
 
 /* <--------  header done  --------> */
 
-/* <--------  header start  --------> */
+/* <--------  hero start  --------> */
 
 
 .hero-top-slider{
@@ -316,7 +323,13 @@ p {
   overflow: hidden;
 }
 
-/* <--------  hero done  --------> */
+/* <--------  orders start  --------> */
+
+.hot-orders h2{
+  margin: 40px 0 20px 0;
+}
+
+/* <--------  orders done  --------> */
 
 
 /* <--------  promocode start  --------> */
@@ -545,4 +558,46 @@ p {
   padding: 10px 15px;
   border-radius: 0 10px 10px 0;
   width: auto;
+}
+
+.order-choose-section{
+  padding: 10px 30px 10px 20px;
+  width: 220px;
+  display: flex;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  position: relative;
+  transition: .3s;
+}
+.order-choose-section:hover{
+  box-shadow: 0 5px 15px 0 #787D8B26;
+}
+.order-choose-section img :first{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.new-pizza{
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  left:20px;
+  top: 20px;
+}
+.order-info{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.order-info h3{
+  margin-top: 10px;
+}
+.order-btn{
+  margin-bottom: 10px;
+  width: 80px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(231, 53, 29, 0.1);
+  color: #E94F1D;
 }
