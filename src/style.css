@@ -625,9 +625,13 @@ button{
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8px 24px 0 #0000001a;
+  border: 1px solid #D6D6D6;
   border-radius: 6px;
   padding: 20px;
+  transition: .3s;
+}
+.topic-slide:hover{
+  box-shadow: 0 8px 24px 0 #0000001a;
 }
 .topic-slide img {
   width: 120px;
