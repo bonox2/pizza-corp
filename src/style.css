@@ -601,3 +601,23 @@ button{
   background: rgba(231, 53, 29, 0.1);
   color: #E94F1D;
 }
+
+
+/* pizza topics start*/
+
+.pizza-settings-main{
+  display: flex;
+  justify-content: space-between;
+}
+.pizza-settings-main img{
+  width: 400px;
+}
+.pizza-settings-details{
+  width: 600px;
+}
+
+
+
+
+
+
