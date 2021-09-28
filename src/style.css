@@ -645,6 +645,14 @@ button{
 .topic-slide .price{
     margin: 10px 0;
 }
+.topic-slide-btn{
+  border: 1px solid transparent;
+}
+.topic-slide-btn:hover{
+  background:#fff;
+  border: 1px solid var(--btn-col-2);
+  color: var(--btn-col-2);
+}
 
 
 

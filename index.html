@@ -446,6 +446,16 @@
         centeredSlides: true,
         autoplay: true,
       });
+      import Swiper, { FreeMode } from 'swiper';
+
+new Swiper('.orders-swiper', {
+  modules: [FreeMode],
+  freeMode: {
+    enabled: true,
+    minimumVelocity: 0.2,
+    momentum: false,
+  },
+});
     </script>
   </body>
 </html>
