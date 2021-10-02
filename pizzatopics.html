@@ -74,29 +74,52 @@
         </nav>
       </div>
     </header>
+    <div class="header-bottom">
+      <ul class="container">
+        <li>
+          <a href="#">Роллы</a>
+        </li>
+        <li>
+          <a href="#">Сеты</a>
+        </li>
+        <li>
+          <a href="#">Салаты</a>
+        </li>
+        <li>
+          <a href="#">Паста</a>
+        </li>
+        <li>
+          <a href="#">Закуски</a>
+        </li>
+      </ul>
+    </div>
     <section class="pizza-settings">
       <div class="container">
         <div class="pizza-settings-main">
-          <img
-            loading="lazy"
-            src="./src/img/image/vegan-pizza.jpg"
-            alt="pizza"
-            width="1"
-            height="0"
-          />
+          <div class="pizza-settings-img">
+            <img
+              loading="lazy"
+              src="./src/img/image/vegan-pizza.jpg"
+              alt="pizza"
+              width="1"
+              height="0"
+            />
+          </div>
           <div class="pizza-settings-details">
-            <h1>Пицца Итальянская с моцареллой и пепперони</h1>
+              <h1 class="pizza-set-title">Пицца Итальянская с моцареллой и пепперони</h1>
             <span class="size-info">30 см, Традиционное тесто, 710 г</span>
-            <p class="topics">
+            <p>
               Гренки ржаные, картофель фри, наггетсы, картофельные дольки, хот
               чиз, соус барбекю, соус сырный
             </p>
-          </div>
-          <div class="buy-info-sec">
-            <div class="price">799 ₽</div>
-            <div class="buy-btns">
-              <button class="corect-btn max duble-left">Оформить</button>
-              <button class="choose-btn duble-right">+1 шт.</button>
+            <div class="pizza-set-bottom">
+              <div class="buy-info-sec">
+                <div class="price">799 ₽</div>
+                <div class="buy-btns">
+                  <button class="corect-btn max duble-left">Оформить</button>
+                  <button class="choose-btn duble-right">+1 шт.</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -104,6 +127,7 @@
     </section>
     <section class="topics-section">
       <div class="container">
+        <h2>Популярные дополнения к этому блюду</h2>
         <div class="swiper topics">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -180,7 +204,6 @@
         </div>
       </div>
     </section>
-
     <footer class="footer">
       <div class="container">
         <ul class="nav-footer">

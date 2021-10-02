@@ -608,18 +608,44 @@ button{
 .pizza-settings-main{
   display: flex;
   justify-content: space-between;
+  padding-top: 60px;
 }
-.pizza-settings-main img{
+.pizza-settings-img{
+  width: 530px;
+  padding: 0 65px;
+}
+.pizza-settings-img img{
   width: 400px;
 }
 .pizza-settings-details{
   width: 600px;
+  font-size: 16px;
+}
+.pizza-set-title{
+font-size: 36px;
+font-weight: 500;
+}
+.size-info{
+color: #75787E;
+margin: 10px 0 20px 0;
+}
+.pizza-set-bottom{
+  width: 460px;
+}
+.buy-info-sec{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 
 
-
-
+.topics-section{
+  padding: 60px 0;
+}
+.topics{
+  margin-top: 20px;
+}
 .topic-slide {
   width: 210px;
   display: flex;
@@ -654,6 +680,13 @@ button{
   color: var(--btn-col-2);
 }
 
+
+.more-details{
+  border-radius: 6px;
+  border: 1px solid var(--btn-col-2);
+  background: #fff;
+  color: var(--btn-col-2);
+}
 
 
 
