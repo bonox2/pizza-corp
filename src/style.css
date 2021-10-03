@@ -681,14 +681,57 @@ margin: 10px 0 20px 0;
 }
 
 
+
+
+/*         pizza topics end*/
+
+
+
+
+
+
+
+
+
+/*              stocks start*/
+.stocks{
+  padding: 40px 0;
+}
+.stocks-main{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .more-details{
+  padding: 10px 15px;
   border-radius: 6px;
   border: 1px solid var(--btn-col-2);
   background: #fff;
   color: var(--btn-col-2);
+  font-weight: 500;
 }
-
-
-
+.more-details i{
+  color: var(--col-2);
+  font-size: 14px;
+}
+.stock-section{
+  width: 370px;
+  margin-bottom: 40px;
+}
+.stock-section img{
+  border: radius 10px;
+  overflow: hidden;
+}
+.stock-section h2{
+font-size: 18px;
+font-weight: 500;
+margin-top: 20px;
+}
+.stock-section p{
+  color: #75787E;
+  font-size:14px ;
+  font-family: 400;
+  margin: 20px 0;
+}
 
 
