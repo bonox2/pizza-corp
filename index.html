@@ -2,9 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -15,6 +12,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza</title>
   </head>
@@ -22,14 +20,15 @@
     <header class="header">
       <div class="container">
         <nav class="navbar">
-          <a href="index.html" class="logo">
+          <a href="/" class="logo">
             <img
               loading="lazy"
+              decoding="async"
               class="logo-img"
-              src="./src/img/image/logo.jpg"
+              src="./img/image/logo.jpg"
               alt="logo"
               width="1"
-              height="0"
+              height="1"
             />
           </a>
           <ul class="nav">
@@ -49,13 +48,14 @@
               <a href="#vacancies">Вакансии</a>
             </li>
           </ul>
-          <div class="contact-number">
+          <a href="tel:+380972555555" class="contact-number">
+            <i class="fas fa-mobile-alt"></i>
             <div class="number">
-              <i class="fas fa-mobile-alt"></i>
-              8 800 407-11-70
+              <p>+38 (097) 255-55-55</p>
+              <p>Звонок бесплатный</p>
             </div>
-            <div>Звонок бесплатный</div>
-          </div>
+            
+          </a>
           <div class="account">
             <button class="account-room-btn">
               <i class="far fa-user"></i>
@@ -65,7 +65,7 @@
               <div class="account-balance">12 475 ₽</div>
               <img
                 class="account-notification"
-                src="./src/img/icons/notification.svg"
+                src="./img/icons/notification.svg"
                 alt="notofication"
               />
             </button>
@@ -74,7 +74,7 @@
       </div>
     </header>
     <div class="header-bottom">
-      <ul class="container">
+      <ul class="container bottom-nav">
         <li>
           <a href="#">Роллы</a>
         </li>
@@ -99,7 +99,7 @@
             <div class="swiper-slide">
               <img
                 lodaing="lazy"
-                src="./src/img/image/hero-slide1.jpg"
+                src="./img/image/hero-slide1.jpg"
                 alt="slide"
                 width="1"
                 height="1"
@@ -108,7 +108,7 @@
             <div class="swiper-slide">
               <img
                 lodaing="lazy"
-                src="./src/img/image/hero-slide1.jpg"
+                src="./img/image/hero-slide1.jpg"
                 alt="slide"
                 width="1"
                 height="1"
@@ -117,7 +117,7 @@
             <div class="swiper-slide">
               <img
                 lodaing="lazy"
-                src="./src/img/image/hero-slide1.jpg"
+                src="./img/image/hero-slide1.jpg"
                 alt="slide"
                 width="1"
                 height="1"
@@ -136,7 +136,7 @@
               <div class="order-choose-section">
                 <img
                   loading="lazy"
-                  src="./src/img/image/order-pizza.jpg"
+                  src="./img/image/order-pizza.jpg"
                   alt="pizza"
                   width="1"
                   height="1"
@@ -144,7 +144,7 @@
                 <img
                   class="new-pizza"
                   loading="lazy"
-                  src="./src/img/image/new.svg"
+                  src="./img/image/new.svg"
                   alt="pizza"
                   width="1"
                   height="1"
@@ -159,7 +159,7 @@
               <div class="order-choose-section">
                 <img
                   loading="lazy"
-                  src="./src/img/image/order-pizza.jpg"
+                  src="./img/image/order-pizza.jpg"
                   alt="pizza"
                   width="1"
                   height="1"
@@ -167,7 +167,7 @@
                 <img
                   class="new-pizza"
                   loading="lazy"
-                  src="./src/img/image/new.svg"
+                  src="./img/image/new.svg"
                   alt="pizza"
                   width="1"
                   height="1"
@@ -182,7 +182,7 @@
               <div class="order-choose-section">
                 <img
                   loading="lazy"
-                  src="./src/img/image/order-pizza.jpg"
+                  src="./img/image/order-pizza.jpg"
                   alt="pizza"
                   width="1"
                   height="1"
@@ -190,7 +190,7 @@
                 <img
                   class="new-pizza"
                   loading="lazy"
-                  src="./src/img/image/new.svg"
+                  src="./img/image/new.svg"
                   alt="pizza"
                   width="1"
                   height="1"
@@ -207,7 +207,7 @@
     </section>
 
     <div class="container">
-      <form type="submit" class="promocode">
+      <form class="promocode">
         <input type="text" placeholder="Введите промокод" />
       </form>
     </div>
@@ -216,7 +216,7 @@
         <h2 class="pizza-title">Пицца</h2>
         <div class="pizza-choose">
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -232,7 +232,7 @@
             </div>
           </div>
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -251,7 +251,7 @@
             </div>
           </div>
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -270,7 +270,7 @@
             </div>
           </div>
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -289,7 +289,7 @@
             </div>
           </div>
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -308,7 +308,7 @@
             </div>
           </div>
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -327,7 +327,7 @@
             </div>
           </div>
           <div class="pizza-section">
-            <img src="./src/img/image/meat-piza.jpg" alt="pizza" />
+            <img src="./img/image/meat-piza.jpg" alt="pizza" />
             <div class="pizza-info">
               <div class="pizza-title">Пицца Халапеньо</div>
               <p class="pizza-components">
@@ -381,16 +381,13 @@
           </div>
           <div class="socials">
             <li>
-              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-fw"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-fw"></i></a>
             </li>
           </div>
         </ul>
@@ -418,7 +415,7 @@
           </div>
           <div class="footer-cards">
             <img
-              src="./src/img/image/cards.svg"
+              src="./img/image/cards.svg"
               alt="cards"
               width="1"
               height="0"
@@ -446,16 +443,6 @@
         centeredSlides: true,
         autoplay: true,
       });
-      import Swiper, { FreeMode } from 'swiper';
-
-new Swiper('.orders-swiper', {
-  modules: [FreeMode],
-  freeMode: {
-    enabled: true,
-    minimumVelocity: 0.2,
-    momentum: false,
-  },
-});
     </script>
   </body>
 </html>

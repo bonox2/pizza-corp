@@ -1,16 +1,15 @@
 {
   "name": "pizza-corp",
   "version": "0.0.0",
+  "dependencies": {
+    "swiper": "^7.0.6"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "swiper": "^7.0.6",
-    "vue": "^3.0.4"
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "vite": "^2.6.0"
   }
 }
