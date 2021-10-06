@@ -281,13 +281,10 @@ button{
   font: inherit;
   color: inherit;
 }
+
 /* <--------  base end  --------> */
 
 /* <--------  header start  --------> */
-
-.header {
-  
-}
 
 
 .navbar {
@@ -340,6 +337,7 @@ button{
   display: flex;
   position: relative;
   color: var(--btn-col-1);
+  align-items: center;
 }
 .account-balance {
   font-size: 16px;
@@ -349,10 +347,16 @@ button{
   display: flex;
   text-align: center;
 }
-.account-notification {
-  position: absolute;
-  top: -12px;
-  right: -12px;
+.quantity {
+  color: #fff;
+  background: #57BC34;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
 
 
@@ -498,16 +502,24 @@ button{
 }
 .footer-sections-menu li {
   margin-right: 40px;
+  transition: .3s;
+}
+.footer-sections-menu li:hover{
+  color: var(--btn-col-2);
 }
 .socials {
   display: flex;
+  transition: .3s;
 }
 .socials a {
-  padding: 10px;
+  width: 40px;
+  height: 40px;
   background: #75787e;
   border-radius: 999px;
   margin-right: 25px;
   transition: 0.3s;
+  justify-content: center;
+  align-items: center;
 }
 .socials a:hover {
   background: var(--btn-col-2);
@@ -839,3 +851,20 @@ margin-top: 20px;
 }
 
 
+/*              stocks done*/
+
+
+
+/*              delivery start*/
+
+.delivery-questions-main{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.delivery-help-section{
+  width: 370px;
+  padding: 40px;
+  border: 1px solid #E5E5E5;
+border-radius: 10px;
+}
