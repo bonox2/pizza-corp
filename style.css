@@ -266,8 +266,11 @@ p {
 :root {
   --col-1: #75787e;
   --col-2: #e5e5e5;
-  --btn-col-1: #e94f1d;
+  --btn-col-1:#ED4543;
   --btn-col-2: #d7301a;
+  --area-1: #F371D1;
+  --area-2: #1E98FF;
+  --area-3:#ED4543;
 }
 
 h2{
@@ -717,6 +720,47 @@ button{
   background: rgba(231, 53, 29, 0.1);
   color: #E94F1D;
 }
+.feedback-col{
+  width: 270px;
+  padding: 20px;
+  box-shadow: 0 5px 20px 0 #75787E40;
+  border-radius: 5px;
+}
+.feedback-name{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+.feedback-coment{
+  color: #75787E;
+}
+.feedback-slider{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* pizza topics start*/
@@ -809,6 +853,24 @@ margin: 10px 0 20px 0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*              stocks start*/
 .stocks{
   padding: 40px 0;
@@ -860,7 +922,11 @@ margin-top: 20px;
 .delivery-questions-main{
   padding: 30px 0;
 }
-.delivery-questions-main, .location h2{
+.delivery-questions-main h2{
+  font-size: 36px;
+  margin: 30px 0;
+}
+ .location h2{
   font-size: 36px;
   margin: 30px 0;
 }
@@ -889,9 +955,39 @@ margin-bottom: 20px;
 /*          location start*/
 .location-main{
   padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
 }
 .location-map{
   background: #3F4651;
 border: 1px solid #F1F2F3;
 border-radius: 10px;
+}
+
+
+/*           delivery-area*/
+.delivery-area{
+  border: 1px solid #E5E5E5;
+  border-radius:10px;
+  padding: 30px 50px 0 30px;
+}
+.delivery-area-cost .area-cost-section:not(:last-child){
+  border-bottom: 1px solid #E5E5E5;
+  width: 415px;
+  margin-bottom: 30px ;
+}
+.area-cost-section h3{
+font-size: 18px;
+font-weight: 500;
+}.area-cost-section h3::before{
+  content: "";
+  background: #000 ;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.area-cost-section span{
+  color: #75787E;
+  margin: 15px 0 40px 0;
 }
