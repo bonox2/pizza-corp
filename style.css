@@ -658,10 +658,19 @@ button{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.discount-price{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 .price {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
+}
+.last-price{
+  color: #B3B1B1;
 }
 
 .buy-btns {
@@ -889,7 +898,6 @@ margin: 10px 0 20px 0;
   font-weight: 500;
 }
 .more-details i{
-  color: var(--col-2);
   font-size: 14px;
 }
 .stock-section{
