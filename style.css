@@ -733,8 +733,14 @@ button{
   background: rgba(231, 53, 29, 0.1);
   color: #E94F1D;
 }
+
 .feedback{
   padding: 40px 0 60px 0;
+}
+.feedback-main h1{
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 .feedback-col{
   width: 270px;
@@ -892,7 +898,12 @@ margin: 10px 0 20px 0;
 .stocks{
   padding: 40px 0;
 }
-.stocks-main{
+.stocks-main h1{
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.stock-sections{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1023,4 +1034,30 @@ font-weight: 500;
 .menu-section h2{
   margin: 40px 0 20px 0;
   font-size: 20px;
+}
+
+.stock-choose-info{
+  display: flex;
+}
+.stock-choose-main{
+ padding: 40px 0;
+ border-bottom: 1px solid #E5E5E5;
+}
+.stock-choose-main img{
+  width: 300px ;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.stock-choose-txt{
+  margin-left: 25px;
+}
+.stock-choose-main h1{
+font-size: 24px;
+font-weight: 500;
+margin: 10px 0 20px 0;
+}
+.stock-choose-main p{
+  width: 470px;
+font-size: 16px;
+color: #75787e;
 }
