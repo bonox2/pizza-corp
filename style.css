@@ -733,11 +733,15 @@ button{
   background: rgba(231, 53, 29, 0.1);
   color: #E94F1D;
 }
+.feedback{
+  padding: 40px 0 60px 0;
+}
 .feedback-col{
   width: 270px;
   padding: 20px;
-  box-shadow: 0 5px 20px 0 #75787E40;
   border-radius: 5px;
+  box-shadow: 0 5px 5px 0 rgba(117, 120, 126, 0.25);
+  margin: 0 15px;
 }
 .feedback-name{
   font-size: 18px;
@@ -1002,4 +1006,21 @@ font-weight: 500;
 .area-cost-section span{
   color: #75787E;
   margin: 15px 0 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* stocks-next        */
+.menu-section h2{
+  margin: 40px 0 20px 0;
+  font-size: 20px;
 }
