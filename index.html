@@ -13,7 +13,7 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./main.js">
+    <link rel="stylesheet" href="./main.js" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza</title>
   </head>
@@ -66,7 +66,7 @@
             <button class="account-balance-btn">
               <i class="fas fa-shopping-cart"></i>
               <div class="account-balance">12 475 ₽</div>
-                <div class="quantity">3</div>
+              <div class="quantity">3</div>
             </button>
           </div>
         </nav>
@@ -227,7 +227,7 @@
               <div class="discount-price">
                 <div class="price">799 ₽</div>
               </div>
-              <button class="choose-btn">ВЫбрать</button>
+              <button class="btn btn-primary">Выбрать</button>
             </div>
           </div>
           <div class="pizza-section">
@@ -243,28 +243,9 @@
               <div class="discount-price">
                 <div class="price">799 ₽</div>
               </div>
-              <div class="buy-btns">
-                <button class="corect-btn max duble-left">Оформить</button>
-                <button class="choose-btn duble-right">+1 шт.</button>
-              </div>
-            </div>
-          </div>
-          <div class="pizza-section">
-            <img src="./img/image/meat-piza.webp" alt="pizza" />
-            <div class="pizza-info">
-              <div class="pizza-title">Пицца Халапеньо</div>
-              <p class="pizza-components">
-                Соус красный, куриное филе, салями, моцарелла, красный лук,
-                халапеньо, свежие томаты
-              </p>
-            </div>
-            <div class="buy-info">
-              <div class="discount-price">
-                <div class="price">799 ₽</div>
-              </div>
-              <div class="buy-btns">
-                <button class="corect-btn max duble-left">Оформить</button>
-                <button class="choose-btn duble-right">+1 шт.</button>
+              <div class="btn-group">
+                <button class="btn btn-success">Оформить</button>
+                <button class="btn btn-primary">+1</button>
               </div>
             </div>
           </div>
@@ -281,9 +262,9 @@
               <div class="discount-price">
                 <div class="price">799 ₽</div>
               </div>
-              <div class="buy-btns">
-                <button class="corect-btn max duble-left">Оформить</button>
-                <button class="choose-btn duble-right">+1 шт.</button>
+              <div class="btn-group">
+                <button class="btn btn-success">Оформить</button>
+                <button class="btn btn-primary">+1</button>
               </div>
             </div>
           </div>
@@ -300,9 +281,9 @@
               <div class="discount-price">
                 <div class="price">799 ₽</div>
               </div>
-              <div class="buy-btns">
-                <button class="corect-btn max duble-left">Оформить</button>
-                <button class="choose-btn duble-right">+1 шт.</button>
+              <div class="btn-group">
+                <button class="btn btn-success">Оформить</button>
+                <button class="btn btn-primary">+1</button>
               </div>
             </div>
           </div>
@@ -319,9 +300,9 @@
               <div class="discount-price">
                 <div class="price">799 ₽</div>
               </div>
-              <div class="buy-btns">
-                <button class="corect-btn max duble-left">Оформить</button>
-                <button class="choose-btn duble-right">+1 шт.</button>
+              <div class="btn-group">
+                <button class="btn btn-success">Оформить</button>
+                <button class="btn btn-primary">+1</button>
               </div>
             </div>
           </div>
@@ -338,9 +319,28 @@
               <div class="discount-price">
                 <div class="price">799 ₽</div>
               </div>
-              <div class="buy-btns">
-                <button class="corect-btn max duble-left">Оформить</button>
-                <button class="choose-btn duble-right">+1 шт.</button>
+              <div class="btn-group">
+                <button class="btn btn-success">Оформить</button>
+                <button class="btn btn-primary">+1</button>
+              </div>
+            </div>
+          </div>
+          <div class="pizza-section">
+            <img src="./img/image/meat-piza.webp" alt="pizza" />
+            <div class="pizza-info">
+              <div class="pizza-title">Пицца Халапеньо</div>
+              <p class="pizza-components">
+                Соус красный, куриное филе, салями, моцарелла, красный лук,
+                халапеньо, свежие томаты
+              </p>
+            </div>
+            <div class="buy-info">
+              <div class="discount-price">
+                <div class="price">799 ₽</div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-success">Оформить</button>
+                <button class="btn btn-primary">+1</button>
               </div>
             </div>
           </div>
@@ -360,9 +360,8 @@
     </section>
     <footer class="footer">
       <div class="container">
-        <ul class="nav-footer">
-          <div class="footer-sections-menu">
-            <ul>
+        <div class="nav-footer">
+          <ul class="footer-sections-menu">
               <li>
                 <a href="#menu">Меню</a>
               </li>
@@ -378,22 +377,25 @@
               <li>
                 <a href="#vacancies">Вакансии</a>
               </li>
-            </ul>
-          </div>
-          <div class="socials">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
-        </ul>
+          </ul>
+          <ul class="socials">
+            <li>
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
         <div class="footer-info">
           <div class="footer-txt">
             <p>
@@ -417,12 +419,7 @@
             </p>
           </div>
           <div class="footer-cards">
-            <img
-              src="./img/image/cards.svg"
-              alt="cards"
-              width="1"
-              height="0"
-            />
+            <img src="./img/image/cards.svg" alt="cards" width="1" height="0" />
             <div>Мы принимаем</div>
           </div>
         </div>
@@ -431,23 +428,22 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
       const hero_top_slider = new Swiper(".hero-top-slider", {
-      slidesPerView: 1,
-      loop: true,
-      effect: "default",
-      centeredSlides: true,
-      autoplay: true,
-    });
+        slidesPerView: 1,
+        loop: true,
+        effect: "default",
+        centeredSlides: true,
+        autoplay: true,
+      });
     </script>
-
 
     <script>
       const orders_slider = new Swiper(".orders-slider", {
-      slidesPerView: 5,
-      loop: true,
-      effect: "default",
-      centeredSlides: true,
-      autoplay: true,
-    });
+        slidesPerView: 5,
+        loop: true,
+        effect: "default",
+        centeredSlides: true,
+        autoplay: true,
+      });
     </script>
   </body>
 </html>
