@@ -471,7 +471,9 @@ button {
 .filter-top>.choose-section>button{
   width:auto ;
 }
-
+.filter-bottom button{
+  margin: 5px;
+}
 /* <--------  menu done  --------> */
 
 /* <--------  delivery start  --------> */
@@ -602,15 +604,15 @@ button {
   color: #fff;
 }
 .btn-outline-primary {
-  border-color: var(--btn-col-1);
   background: transparent;
   color: var(--btn-col-1);
+  border: 1px solid var(--btn-col-2);
 }
 .btn-outline-primary i{
   margin-left: 20px;
 }
 .btn-outline-light {
-  border-color: #eee;
+  border: 1px solid #D6D6D6;
   background: #fff;
   color: #333;
 }
@@ -1066,3 +1068,66 @@ button {
   font-size: 16px;
   color: #75787e;
 }
+
+
+/*       stocks-next done           */
+
+
+
+
+
+
+
+
+
+/*       vacancies start         */
+.vacancies{ 
+padding:40px 0 80px 0;
+}
+.vacancies-main h1{
+  font-weight: 500;
+font-size: 36px;
+}
+.vacancies-main .btn{
+  margin: 30px 0;
+  padding: 15px 75px;
+}
+.vcancies-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vacancy{
+  background: #FFFFFF;
+box-shadow: 0 5px 15px rgba(117, 120, 126, 0.1);
+border-radius: 10px;
+padding: 30px;
+font-weight: 500;
+width: 570px;
+max-height: 500px;
+margin-bottom: 30px;
+}
+.vacancy h2{
+  margin-bottom: 20px;
+font-size: 20px;
+}
+.vacancy h3{
+font-size: 16px;
+margin-bottom: 20px;
+}
+.vacancy li{
+  margin-bottom: 20px;
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 400;
+}
+.vacancy li::before{
+  content: "";
+  margin-right: 10px;
+  background: #f4381f33;
+  border: 3px solid #f4381f;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
