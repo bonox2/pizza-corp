@@ -1037,11 +1037,17 @@ button {
 }
 .area-cost-section h3::before {
   content: '';
-  background: #000;
+  background: var(--area-2);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin-right: 20px;
+}
+.area-cost-section:first-child  h3::before {
+  background: var(--area-1);
+}
+.area-cost-section:last-child  h3::before {
+  background: var(--area-3);
 }
 .area-cost-section span {
   color: #75787e;
