@@ -337,7 +337,7 @@ button {
   transition: .3s;
 }
 .account-room-btn:hover{
-  box-shadow: 0 5px 10px rgba(117, 120, 126, 0.25);
+  color: var(--btn-col-2);
 }
 .account-balance-btn {
   cursor: pointer;
@@ -383,12 +383,52 @@ button {
   color: #000;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 5px;
   transition: .3s;
 }
 .number>:first-child:hover{
   color: var(--btn-col-2);
 }
+
+
+.account-balance-btn{
+  position: relative;
+}
+.submenu {
+  width: 520px;
+  border: 1px solid #F1F2F3;
+  box-shadow: 0 20px 50px 0 #75787E33;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  right:0;
+  top: 52px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: .3s;
+}
+.submenu li{
+  padding: 20px;
+}
+.submenu li:not(:first-child,:last-child){
+  border-top: 1px solid #000;
+}
+.total-order{
+  background: #f9f9f9;
+}
+.account-balance-btn:hover .submenu {
+  opacity: 1;
+    transform: scaleY(1);
+    z-index: 1002;
+}
+
+
+
+
+
+
+
+
 .header-bottom {
   position: sticky;
   top: 0;
