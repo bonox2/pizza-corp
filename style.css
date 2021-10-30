@@ -408,14 +408,71 @@ button {
   transition: .3s;
 }
 .submenu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  font-weight: 500;
+  font-size: 16px;
   padding: 20px;
 }
-.submenu li:not(:first-child,:last-child){
-  border-top: 1px solid #000;
+.submenu li:not(:last-child){
+  border-top: 1px solid #ededed;
 }
-.total-order{
+.submenu-title{
+  display: block;
+}
+.submenu-title span{
+  color: #75787E;
+  margin-top: 5px;
+}
+.submenu img{
+  width: 60px;
+  height: 60px;
+}
+.submenu i{
+  color: #75787E;
+  font-size: 20px;
+  transition: .3S;
+}
+.submenu i:hover{
+  color: var(--btn-col-2);
+}
+
+
+
+
+.shopping-price{
   background: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
 }
+.shopping-price a{
+  background: var(--btn-col-2);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+.shopping-price a:hover {
+  background:#fff;
+  color: var(--btn-col-2);
+  border: 1px solid var(--btn-col-2);
+}
+.shopping-price div{
+  display: flex;
+  align-items: center;
+  color: #75787E;
+  margin-right: 15px;
+}
+.shopping-price span{
+  color: #111;
+  font-weight: 500;
+font-size: 20px;
+}
+
 .account-balance-btn:hover .submenu {
   opacity: 1;
     transform: scaleY(1);
