@@ -471,11 +471,12 @@ button {
 .title {
   font-size: 24px;
 }
-.pizza-choose {
+.dish-choose {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-.pizza-section:not(:nth-child(4n + 0)) {
+.dish-section:not(:nth-child(4n + 0)) {
   margin: 0 30px 30px 0;
 }
 
@@ -711,26 +712,26 @@ button {
   background: #3ca318;
 }
 
-/*pizza section*/
+/*dish section*/
 
-.pizza-section {
+.dish-section {
   width: 270px;
 }
 
-.pizza-section > img {
+.dish-section > img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   background-color: #ccc;
 }
-.pizza-info {
+.dish-info {
   margin-bottom: 10px;
 }
-.pizza-title {
+.dish-title {
   margin: 10px 0;
   font-size: 18px;
 }
-.pizza-components {
+.dish-components {
   font-size: 14px;
   color: #75787e;
 }
@@ -774,7 +775,7 @@ button {
   height: 80px;
   margin-right: 10px;
 }
-.new-pizza {
+.new-dish {
   width: 35px;
   height: 20px;
   position: absolute;
@@ -827,25 +828,25 @@ button {
   justify-content: space-between;
 }
 
-/* pizza topics start*/
+/* dish topics start*/
 
-.pizza-settings-main {
+.dish-settings-main {
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
 }
-.pizza-settings-img {
+.dish-settings-img {
   width: 530px;
   padding: 0 65px;
 }
-.pizza-settings-img img {
+.dish-settings-img img {
   width: 400px;
 }
-.pizza-settings-details {
+.dish-settings-details {
   width: 600px;
   font-size: 16px;
 }
-.pizza-set-title {
+.dish-set-title {
   font-size: 36px;
   font-weight: 500;
 }
@@ -853,7 +854,7 @@ button {
   color: #75787e;
   margin: 10px 0 20px 0;
 }
-.pizza-set-bottom {
+.dish-set-bottom {
   width: 460px;
 }
 .set-size{
@@ -926,7 +927,7 @@ button {
   color: var(--btn-col-2);
 }
 
-/*         pizza topics end*/
+/*         dish topics end*/
 
 /*              stocks start*/
 .stocks {
