@@ -377,7 +377,7 @@ button {
 
 .contact-number > i {
   font-size: 25px;
-  margin-right: 15px;
+  margin: 4px 15px 0 0 ;
 }
 .number > :first-child {
   color: #000;
