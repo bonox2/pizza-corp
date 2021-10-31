@@ -935,10 +935,33 @@ font-size: 20px;
 .dish-settings-img {
   width: 530px;
   padding: 0 65px;
+  position: relative;
 }
 .dish-settings-img img {
   width: 400px;
 }
+.pill{
+  position: absolute;
+  border-radius:999px;
+  padding:5px 15px;
+  color: #fff;
+  line-height: 22px;
+}
+.new-pill{
+  background: #893CA9;
+  left: 60px;
+  top: 71px;
+}
+.type-pill{
+  background: #2DA771;
+  left: 60px;
+  top: 110px;
+}
+
+
+
+
+
 .dish-settings-details {
   width: 600px;
   font-size: 16px;
