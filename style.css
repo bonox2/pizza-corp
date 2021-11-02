@@ -374,7 +374,6 @@ button {
   right: 0;
   transform: translate(40%, -40%);
 }
-
 .contact-number > i {
   font-size: 25px;
   margin: 4px 15px 0 0 ;
@@ -406,6 +405,7 @@ button {
   transform: scaleY(0);
   transform-origin: 50% 0;
   transition: .3s;
+  z-index: 1002;
 }
 .submenu li{
   display: flex;
@@ -476,7 +476,6 @@ font-size: 20px;
 .account-balance-btn:hover .submenu {
   opacity: 1;
     transform: scaleY(1);
-    z-index: 1002;
 }
 
 
@@ -715,6 +714,7 @@ font-size: 20px;
 .btn-primary {
   background: var(--btn-col-1);
   color: #fff;
+  padding: 10px;
 }
 .btn-outline-primary {
   background: transparent;
@@ -821,7 +821,11 @@ font-size: 20px;
   object-fit: cover;
   background-color: #ccc;
 }
-.dish-info {
+.dish-info{
+  display: flex;
+  flex-direction: column;
+}
+.dish-text {
   margin-bottom: 10px;
 }
 .dish-title {
@@ -1288,3 +1292,48 @@ margin-bottom: 20px;
   height: 8px;
 }
 
+
+
+
+
+
+
+
+@media (max-width:1199.98px){
+  .container{
+    max-width: 960px;
+  }
+  .nav{
+    display: none;
+  }
+  .dish-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+  }
+  .dish-choose{
+    display: flex;
+  }
+  .dish-choose img{
+    width: 240px;
+    height: 190px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+} 
+@media (max-width:991.98px){
+  .container{
+    max-width: 720px;
+  }
+}
+@media (max-width:767.98px){
+  .container{
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media (max-width:575.98px){
+}
+@media (max-width:320px){
+}
