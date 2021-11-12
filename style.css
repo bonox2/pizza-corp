@@ -1420,6 +1420,21 @@ font-weight: 500;
   .stock-section{
     width: 350px;
   }
+
+
+  /*stocks-next*/
+  .stock-choose-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .stock-choose-info img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .stock-choose-txt{
+    margin-top: 20px;
+  }
 } 
 @media (max-width:991.98px){
   .container{
