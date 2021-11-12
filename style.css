@@ -1415,6 +1415,11 @@ font-weight: 500;
   .dish-set-bottom{
     display: none;
   }
+
+  /* stocks page*/
+  .stock-section{
+    width: 350px;
+  }
 } 
 @media (max-width:991.98px){
   .container{
