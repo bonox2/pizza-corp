@@ -501,8 +501,6 @@
         centeredSlides: true,
         autoplay: true,
       });
-
-      
     </script>
 
     <script>
@@ -513,6 +511,14 @@
         centeredSlides: true,
         autoplay: true,
       });
+
+      const swiper = new Swiper('.orders-slider', {
+  breakpoints: {
+    991.98: {
+      slidesPerView: 3,
+    }
+  }
+})
     </script>
   </body>
 </html>
