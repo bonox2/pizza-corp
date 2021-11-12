@@ -589,7 +589,6 @@ font-size: 20px;
 
 /* <--------  delivery start  --------> */
 
-/* <--------  delivery done --------> */
 
 .delivery-main {
   padding: 35px;
@@ -716,7 +715,7 @@ font-size: 20px;
   color: #fff;
   padding: 10px;
   white-space: nowrap;
-
+  transition: .3s;
 }
 .btn-outline-primary {
   background: transparent;
@@ -1054,6 +1053,21 @@ font-size: 20px;
   color: var(--btn-col-2);
 }
 
+
+.add-curt{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  padding: 15px;
+  box-shadow: 0 5px 20px 5px #0000000D;
+  background: #fff;
+}
+.add-curt-btn{
+  width: 100%;
+  border-radius: 6px;
+  transition: .3s;
+}
 /*         dish topics end*/
 
 /*              stocks start*/
@@ -1379,6 +1393,27 @@ margin-bottom: 20px;
   /* menu page*/
   .dish-section {
     margin: 0 30px 30px 0;
+  }
+
+
+  /*   pizzatopics page*/
+  .dish-settings-main{
+    flex-direction: column;  }
+  .dish-settings-img{
+    width: 100%;
+  }
+  .dish-settings-details{
+    width: 100%;
+  }
+  .dish-set-title{
+font-size: 24px;
+font-weight: 500;
+  }
+  .set-size{
+    width: 100%;
+  }
+  .dish-set-bottom{
+    display: none;
   }
 } 
 @media (max-width:991.98px){
