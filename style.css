@@ -1435,6 +1435,25 @@ font-weight: 500;
   .stock-choose-txt{
     margin-top: 20px;
   }
+  /*delivery page*/
+  .help-delivery-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .delivery-help-section{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .delivery-help-section img{
+    width: 200px;
+  }
+  .delivery-area{
+    display: none;
+  }
+  .location-map{
+    width: 100%;
+    height: 400px;
+  }
 } 
 @media (max-width:991.98px){
   .container{
