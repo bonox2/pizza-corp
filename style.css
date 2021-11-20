@@ -824,9 +824,6 @@ button {
   display: flex;
   flex-direction: column;
 }
-.dish-text {
-  margin-bottom: 10px;
-}
 .dish-title {
   margin: 10px 0;
   font-size: 18px;
@@ -1445,11 +1442,46 @@ button {
     width: 100%;
     padding: 0 15px;
   }
-  .contact-number, .account{
-    display: none;
+  .logo > img{
+    width: 80px;
+  }
+  .number > :first-child{
+    font-size: 16px;
+  }
+  .account{
+    width: auto;
+  }
+  .account-room-btn{
+    margin-right: 10px;
+  }
+  .account-balance-btn{
+    width: 135px;
+  }
+  
+  .promocode{
+    width: 100%;
+  }
+  .dish-info{
+    height: 190px;
+  }
+  .buy-info{
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin-top: 15px;
   }
   .delivery-info{
     width: auto;
+  }
+  .footer-sections-menu li{
+    margin-right:  20px;
+  }
+  .footer-txt{
+    width: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-number, .account{
+    display: none;
   }
   .dish-title{
     margin-top: 0;
@@ -1457,23 +1489,13 @@ button {
   .dish-text{
     margin-bottom: 0;
   }
-  .buy-info{
-    align-items: flex-start;
-    flex-direction: column-reverse;
-    margin-top: 25px;
-  }
+  
   .price{
     margin-top: 4px;
   }
-
-
-
-
   .footer{
     display: none;
   }
-}
-@media (max-width: 575.98px) {
 }
 @media (max-width: 320px) {
   
