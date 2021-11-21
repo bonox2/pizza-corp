@@ -10,10 +10,3 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-
-document.body.addEventListener('click',  (event) => {
-    const burgerBtn = event.target.closest('.menu-btn')
-    if (burgerBtn) {
-        document.body.classList.toggle('show-menu')
-    }
-})

@@ -1278,6 +1278,9 @@ button {
   height: 8px;
 }
 
+
+
+
 @media (max-width: 1199.98px) {
   .container {
     max-width: 960px;
@@ -1327,6 +1330,22 @@ button {
   .menu-btn.open .menu-btn-burger:after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+  .open{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    background: #ccc;
+    flex-direction: column;
+    z-index: 9999;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+  }
+
+
+
 
   .nav {
     display: none;
@@ -1442,6 +1461,7 @@ button {
     width: 100%;
     padding: 0 15px;
   }
+  
   .logo > img{
     width: 80px;
   }
