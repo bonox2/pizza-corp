@@ -1285,20 +1285,26 @@ button {
   .container {
     max-width: 960px;
   }
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .burger-menu{
+    display: none;
+  }
   .menu-btn {
     width: 24px;
     height: 24px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    cursor: pointer;
+    position: relative;
   }
-  .menu-btn-burger {
+  .menu-btn-burger{
+    border-radius: 999px;
     width: 18px;
     height: 2px;
-    border-radius: 999px;
     background: #4b4b4b;
     transition: all 0.3s ease-in-out;
   }
@@ -1320,28 +1326,38 @@ button {
   }
   /*   animation*/
   .menu-btn.open .menu-btn-burger {
+    position: absolute;
+    top: 20px;
+    right: 15px;
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
   }
   .menu-btn.open .menu-btn-burger:before {
+    position: absolute;
+    top: 20px;
+    right: 15px;
     transform: rotate(45deg) translate(35px, -35px);
   }
   .menu-btn.open .menu-btn-burger:after {
+    position: absolute;
+    top: 20px;
+    right: 15px;
     transform: rotate(-45deg) translate(35px, 35px);
   }
   .open{
-    position: absolute;
+    display: flex;
+    position: fixed;
     height: 100%;
-    width: 50%;
-    left: 0;
+    width: 100%;
+    right: 0;
     top: 0;
     background: #ccc;
     flex-direction: column;
     z-index: 9999;
     align-items: center;
     font-size: 40px;
-    display: flex;
+    padding-top: 100px;
   }
 
 
@@ -1501,6 +1517,17 @@ button {
     flex-direction: row;
     margin-top: 15px;
   }
+  .btn-primary{
+    font-size: 12px;
+  }
+  .choose-section{
+    display: none;
+  }
+  
+
+
+
+
   .delivery-info{
     width: auto;
   }
@@ -1527,7 +1554,10 @@ button {
   .dish-text{
     margin-bottom: 0;
   }
-  
+  .dish-settings-img img {
+    width: 220px;
+    margin: 0 auto;
+}
   .price{
     margin-top: 4px;
   }
@@ -1536,5 +1566,8 @@ button {
   }
 }
 @media (max-width: 320px) {
-  
+  .dish-settings-img img {
+    width: 150px;
+    margin: 0 auto;
+}
 }
