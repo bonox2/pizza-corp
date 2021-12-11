@@ -1497,6 +1497,9 @@ button {
   .promocode{
     width: 100%;
   }
+  .dish-title{
+    margin: 0;
+  }
   .dish-info{
     height: 190px;
   }
@@ -1548,9 +1551,12 @@ button {
   .hero-top-slider {
     margin-top: 0;
 }
-  .dish-title{
-    margin-top: 0;
-  }
+.dish-choose img {
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
   .dish-text{
     margin-bottom: 0;
   }
