@@ -952,11 +952,21 @@ button {
   background: #893ca9;
   left: 60px;
   top: 71px;
+  transition: .3s;
 }
 .type-pill {
   background: #2da771;
   left: 60px;
   top: 110px;
+  transition: .3s;
+}
+.type-pill:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.new-pill:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .dish-settings-details {
@@ -1480,7 +1490,9 @@ button {
     width: 100%;
     padding: 0 15px;
   }
-  
+  .btn{
+    min-width: 90px;
+  }
   .logo > img{
     width: 80px;
   }
@@ -1522,8 +1534,8 @@ button {
   .btn-primary{
     font-size: 12px;
   }
-  .choose-section{
-    display: none;
+  .stock-section {
+    width: 100%;
   }
   .delivery-info{
     width: auto;
@@ -1538,6 +1550,27 @@ button {
     position: sticky;
     bottom: 0;
     z-index: 6000;
+  }
+  .account-balance-btn-footer{
+    cursor: pointer;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  }
+  .quantity-small{
+    color: #fff;
+  background: var(--btn-col-2);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10%, -10%);
   }
   .nav-footer-small{
     display: flex;
